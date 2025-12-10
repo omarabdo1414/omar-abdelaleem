@@ -45,8 +45,6 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -76,6 +74,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
 }
 
 .dark {
@@ -85,7 +85,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
+  --primary: #135bec;
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -118,5 +118,129 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Base background (dark mode look) */
+body {
+  background-color: #101622; /* your background-dark */
+  color: white;
+}
+
+body {
+  background-color: #f6f6f8; /* Light mode background */
+  color: #000;
+}
+
+/* Dot grid - light mode */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Noise texture - same for both modes */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+html.dark body {
+  background-color: #101622; /* Dark mode background */
+  color: white;
+}
+
+html.dark body::before {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+/* Nav Bar Background */
+#navbar {
+  background-color: rgba(0, 0, 0, 0.05); /* subtle light tint */
+  backdrop-filter: blur(15px);
+}
+html.dark #navbar {
+  background-color: rgba(16, 22, 34, 0.8); /* dark tinted + glass */
+  backdrop-filter: blur(15px);
+}
+
+@layer components {
+  .section-container {
+    @apply mt-20 mb-20 mx-auto w-[80%]
+  }
+  .hero-info {
+    @apply flex flex-col items-start justify-center gap-5 max-md:text-center
+  }
+  .btn {
+    @apply flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-base font-bold leading-normal tracking-[0.015em] text-white hover:bg-primary/90
+  } 
+  /* Home Styling */
+  .home {
+    @apply flex items-center justify-evenly gap-10
+  }
+  .home-title {
+
+  }
+  .home-description {
+
+  }
+  .home-cta {
+
+  }
+
+  .home-image {
+
+  }
+  /* ###################################### */
+  /* About Styling */
+  .about {
+
+  }
+  /* ###################################### */
+  /* Projects Styling */
+  .projects {
+
+  }
+  .project-grid {
+
+  }
+  .project-card {
+
+  }
+  .project-title {
+
+  }
+  .project-description {
+
+  }
+  .project-links {
+
+  }
+  .project-image {
+
+  }
+  /* ###################################### */
+  /* Contact Styling */
+  .contact {
+
+  }
+  .contact-form {
+
+  }
+  .contact-input {
+
+  }
+  .contact-textarea {
+
+  }
+  .contact-button {
+
   }
 }
