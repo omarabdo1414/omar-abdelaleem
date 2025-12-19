@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import ProfileImage from "@/public/images/DSC_0629.png"
+import ProfileImage from "@/public/images/tech/DSC_0629.png"
 
 const Bio = () => {
   return (
