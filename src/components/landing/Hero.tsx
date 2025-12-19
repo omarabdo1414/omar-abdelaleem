@@ -1,5 +1,6 @@
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 import MyImage from "@/public/images/Omar.png"
 
@@ -11,7 +12,9 @@ function Hero() {
           <h1 className="lg:text-5xl text-3xl font-bold">Omar Abd El-Aleem</h1>
           <p className="text-[16px] lg:text-[18px] text-muted-foreground">Creative Front-End Developer | Building Intuitive Web Experiences</p>
           <Button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-base font-bold leading-normal tracking-[0.015em] text-white hover:bg-primary/90">
-            <span className="truncate">View My Work</span>
+            <Link href="/projects">
+              <span className="truncate">View My Work</span>
+            </Link>
           </Button>
         </div>
         <div className="hero-img">

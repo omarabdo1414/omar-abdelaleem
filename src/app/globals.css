@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -171,12 +172,27 @@ html.dark #navbar {
   backdrop-filter: blur(15px);
 }
 
+.exp::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 2px;
+  height: 100%;
+  left: -60px;
+  top: 45px;
+}
+
 @layer components {
   .section-container {
-    @apply mt-20 mb-20 mx-auto w-[80%]
+    @apply max-w-7xl mx-auto px-6 sm:px-8 my-20;
   }
   .hero-info {
     @apply flex flex-col items-start justify-center gap-5 max-md:text-center
+  }
+  .skill-card {
+    @apply flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all hover:translate-y-[-5px] ease-in-out duration-300 cursor-pointer;
   }
   .btn {
     @apply flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-base font-bold leading-normal tracking-[0.015em] text-white hover:bg-primary/90

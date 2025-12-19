@@ -1,11 +1,13 @@
 import Hero from "@/components/landing/Hero";
-import FeacheredProjects from "@/components/landing/FeacheredProjects";
+import FeaturedProjects from "@/components/landing/FeacheredProjects";
+import About from "./about/page";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <FeacheredProjects />
+      <FeaturedProjects />
+      <About />
     </main>
   );
 }

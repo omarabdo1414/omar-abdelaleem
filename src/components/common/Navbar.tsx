@@ -4,14 +4,37 @@ import Link from "next/link"
 import { Code2Icon, List as ListIcon, X as CloseIcon } from "lucide-react";
 import { Button } from "../ui/button"
 
-// Logics
 import { useState } from "react"
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
+    const Routes = [
+      {
+        id: "home",
+        title: "Home",
+        href: "/",
+      },
+      {
+        id: "projects",
+        title: "Projects",
+        href: "/projects",
+      },
+      {
+        id: "about",
+        title: "About",
+        href: "/about",
+      },
+      {
+        id: "contact",
+        title: "Contact",
+        href: "/contact",
+      },
+    ];
+
     return (
         <>
+        {/* Desktop View */}
         <nav className="shadow-lg flex justify-center items-center" id="navbar">
             <div className="container flex md:justify-around justify-between py-5 max-md:px-5 dark:border-b dark:border-[#818183]">
                 <Link href="/" className="flex items-center justify-center">
@@ -22,18 +45,17 @@ const Navbar = () => {
                 </Link>
                 <div className="md:nav-list md:flex md:items-center md:gap-15 hidden">
                     <ul className="flex lg:gap-15 gap-8 items-center">
-                        <Link href="/">
-                            <li className="dark:text-white text-lg">Home</li>
-                        </Link>
-                        <Link href="/projects">
-                            <li className="dark:text-white text-lg">Projects</li>
-                        </Link>
-                        <Link href="/about">
-                            <li className="dark:text-white text-lg">About</li>
-                        </Link>
-                        <Link href="/contact">
-                            <li className="dark:text-white text-lg">Contact</li>
-                        </Link>
+                        {
+                          Routes.map((route) => {
+                            return (
+                              <Link href={route.href} key={route.id}>
+                                <li className="dark:text-white text-lg" >
+                                    {route.title}    
+                                </li>
+                              </Link>
+                            );
+                          })
+                        }
                     </ul>
                     <div className="flex min-w-[84px] cursor-pointer items-center justify-center">
                         <Button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-base font-bold leading-normal tracking-[0.015em] text-white hover:bg-primary/90">
@@ -43,11 +65,13 @@ const Navbar = () => {
                         </Button>
                     </div>
                 </div>
-                <div className="block md:hidden" onClick={() => {
-                    setOpen(true);
-                }}>
+                <Button className="block md:hidden cursor-pointer" onClick={() => {
+                      setOpen(true);
+                  }}
+                  variant="ghost"
+                  >
                     <ListIcon />
-                </div>
+                </Button>
             </div>
         </nav>
         {/* Mobile Dropdown Menu */}
@@ -65,18 +89,13 @@ const Navbar = () => {
 
             {/* Mobile Links */}
             <ul className="flex flex-col gap-6 text-lg items-center z-50">
-              <Link href="/" onClick={() => setOpen(false)}>
-                <li className="dark:text-white">Home</li>
-              </Link>
-              <Link href="/projects" onClick={() => setOpen(false)}>
-                <li className="dark:text-white">Projects</li>
-              </Link>
-              <Link href="/about" onClick={() => setOpen(false)}>
-                <li className="dark:text-white">About</li>
-              </Link>
-              <Link href="/contact" onClick={() => setOpen(false)}>
-                <li className="dark:text-white">Contact</li>
-              </Link>
+              {Routes.map((route) => (
+                <li className="dark:text-white" key={route.id} >
+                  <Link href={route.href} onClick={() => setOpen(false)} >
+                      {route.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
 
             {/* Button */}

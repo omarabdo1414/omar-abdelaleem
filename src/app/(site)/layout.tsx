@@ -29,16 +29,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning style={{scrollBehavior:"smooth"}}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <Header />
-            <ThemeSwitch />
-            <main>
-              {children}
-            </main>
+          <ThemeSwitch />
+          <main>
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

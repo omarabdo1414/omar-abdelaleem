@@ -13,12 +13,12 @@ const Footer = () => {
             <FaGithub size={25} />
           </div>
         </Link>
-        <Link href="/"> 
+        <Link href="https://www.linkedin.com/in/omar-abd-el-aleem/" target="_blank"> 
           <div className="cursor-pointer w-15 h-15">
             <FaLinkedin size={25} color="#0a66c2"/>
           </div>
         </Link>
-        <Link href="/">
+        <Link href="https://www.facebook.com/omar.abdo.3532507" target="_blank">
           <div className="cursor-pointer w-15 h-15">
             <FaFacebook 
               size={25}
