@@ -81,7 +81,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
 ## 📂 Project Structure
 
 ```
@@ -96,10 +95,46 @@ src/
         page.tsx
       contact/
         page.tsx
+    api/
+      contact/
+        route.ts
   components/
+    common/
+      Navbar.tsx
+      Footer.tsx
+      Button.tsx
+      SectionTitle.tsx
+    landing/
+      Hero.tsx
+      TechStack.tsx
+      SocialLinks.tsx
+      ScrollDown.tsx
     about/
       Bio.tsx
-    # ... other components
+      Skills.tsx
+      Timeline.tsx
+    projects/
+      ProjectCard.tsx
+      ProjectGrid.tsx
+  styles/
+    globals.css
+    variables.css
+  lib/
+    utils.ts
+    constants.ts
+    data/
+      projects.ts
+      socialLinks.ts
+      techstack.ts
+  hooks/
+    useScroll.ts
+    useTheme.ts
+  context/
+    ThemeContext.tsx
   public/
-    # Static assets
+    images/
+      avatar.png
+      tech/
+      projects/
+
 ```
