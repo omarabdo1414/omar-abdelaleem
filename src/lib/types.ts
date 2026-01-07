@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 
 export type Skill = {
   name: string;
@@ -9,6 +10,7 @@ export type Project = {
   name: string;
   techStack: string[]; // List of technologies used
   description: string[]; // Multiple points describing the project
+  imgURL: string | StaticImageData; // Image URL for the project
 };
 
 export type Job = {

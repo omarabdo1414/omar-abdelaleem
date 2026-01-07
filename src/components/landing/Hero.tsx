@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-import MyImage from "@/public/images/Omar.png"
+import MyImage from "@/public/images/tech/Omar.png"
 
 function Hero() {
   return (

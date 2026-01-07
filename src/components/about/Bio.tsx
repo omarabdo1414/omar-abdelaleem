@@ -1,10 +1,12 @@
 import Image from "next/image";
 
 import ProfileImage from "@/public/images/tech/DSC_0629.png"
+import SectionTitle from "../common/SectionTitle";
 
 const Bio = () => {
   return (
         <div className='my-15 ml-10'>
+            <SectionTitle title="About Me" />
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_4fr] ">
                 <div className='flex items-center justify-center py-5 min-h-[180px]'>
                   <Image src={ProfileImage} alt="Profile" width={100} height={100} className="rounded-full w-[200px] h-[200px]" />
