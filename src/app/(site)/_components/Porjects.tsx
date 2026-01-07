@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   
   return (
-    <section className="py-16 px-4 md:px-10">
+    <section className="py-16 px-4 md:px-10" id="projects">
       <div className="mx-auto max-w-6xl">
 
         {/* Section Header */}

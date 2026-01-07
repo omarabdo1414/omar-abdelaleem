@@ -17,7 +17,7 @@ export const Projects: Project[] = [
   },
   {
     name: "Food Ordering App",
-    techStack: ["Next.js", "TypeScript", "Redux Toolkit", "Prisma", "PostgreSQL"],
+    techStack: ["Next.js", "React", "TypeScript", "Redux Toolkit", "Prisma", "PostgreSQL"],
     description: [
       "Developed a full-stack food ordering system with menu browsing, cart flow, and order management.",
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
@@ -26,7 +26,7 @@ export const Projects: Project[] = [
   },
   {
     name: "LMS Platform",
-    techStack: ["Next.js", "React 19", "TypeScript", "Tailwind", "shadcn/ui", "Redux Toolkit"],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind", "shadcn/ui", "Redux Toolkit"],
     description: [
       "Created a modern LMS with role-based authentication, lesson/content management, and a production-ready exam module.",
       "Engineered reusable UI components, optimized form handling with Formik/Yup, and added animations plus toast feedback for UX.",
@@ -35,7 +35,7 @@ export const Projects: Project[] = [
   },
   {
     name: "AI LMS with Conversational Tutor",
-    techStack: ["Next.js", "TypeScript", "Clerk Auth", "shadcn/ui"],
+    techStack: ["Next.js", "React", "TypeScript", "Clerk Auth", "shadcn/ui"],
     description: [
       "Built an LMS that allows users to create lessons and interact with an AI tutor through real-time chat.",
       "Implemented Clerk for authentication, designed reusable UI, and integrated AI conversation logic for personalized learning.",
@@ -48,7 +48,7 @@ export const Projects: Project[] = [
 export const FeaturedProjects: Project[] = [
   {
     name: "Food Ordering App",
-    techStack: ["Next.js", "TypeScript", "Redux Toolkit", "Prisma", "PostgreSQL"],
+    techStack: ["Next.js", "React", "TypeScript", "Redux Toolkit", "Prisma", "PostgreSQL"],
     description: [
       "Developed a full-stack food ordering system with menu browsing, cart flow, and order management.",
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
@@ -57,7 +57,7 @@ export const FeaturedProjects: Project[] = [
   },
   {
     name: "LMS Platform",
-    techStack: ["Next.js", "React 19", "TypeScript", "Tailwind", "shadcn/ui", "Redux Toolkit"],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind", "shadcn/ui", "Redux Toolkit"],
     description: [
       "Created a modern LMS with role-based authentication, lesson/content management, and a production-ready exam module.",
       "Engineered reusable UI components, optimized form handling with Formik/Yup, and added animations plus toast feedback for UX.",
@@ -66,7 +66,7 @@ export const FeaturedProjects: Project[] = [
   },
   {
     name: "E-Commerce Websites",
-    techStack: ["Next.js", "TypeScript", "Redux Toolkit", "Prisma", "PostgreSQL"],
+    techStack: ["Next.js", "React", "TypeScript", "Redux Toolkit", "Prisma", "PostgreSQL"],
     description: [
       "Developed a full-stack food ordering system with menu browsing, cart flow, and order management.",
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
@@ -75,7 +75,7 @@ export const FeaturedProjects: Project[] = [
   },
   {
     name: "Chat Application",
-    techStack: ["Next.js", "TypeScript", "Node.js", "Express", "Socket.io"],
+    techStack: ["Next.js", "React", "TypeScript", "Node.js", "Express", "Socket.io"],
     description: [
       "Developed a full-stack food ordering system with menu browsing, cart flow, and order management.",
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
