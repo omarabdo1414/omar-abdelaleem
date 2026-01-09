@@ -1,3 +1,5 @@
+"use client";
+
 import Bio from "@/components/about/Bio";
 import Skills from "@/components/about/Skills";
 import Timeline from "@/components/about/Timeline";
