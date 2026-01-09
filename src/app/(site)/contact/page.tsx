@@ -77,7 +77,6 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Contact Form Section */}
       <ContactSection />
     </div>
   );
