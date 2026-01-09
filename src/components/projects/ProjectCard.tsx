@@ -26,13 +26,13 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
   const getProjectImage = () => {
     const name = project.name.toLowerCase();
     if (name.includes("basket") || name.includes("e-commerce")) {
-      return project4; // E-Commerce.png
+      return project3; // E-Commerce.png
     } else if (name.includes("food ordering")) {
       return project1; // Food Ordering Test.webp
     } else if (name.includes("lms platform") && !name.includes("ai")) {
       return project2; // LMS.png
     } else if (name.includes("ai lms") || name.includes("conversational")) {
-      return project3; // Conversational Tutor.webp
+      return project4; // Conversational Tutor.webp
     } else if (name.includes("chat")) {
       return project5; // Chat.webp
     }
