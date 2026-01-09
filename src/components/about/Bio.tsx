@@ -9,7 +9,7 @@ const Bio = () => {
             <SectionTitle title="About Me" />
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_4fr] ">
                 <div className='flex items-center justify-center py-5 min-h-[180px]'>
-                  <Image src={ProfileImage} alt="Profile" width={100} height={100} className="rounded-full w-[200px] h-[200px]" />
+                  <Image src={ProfileImage} alt="Profile" className="object-cover rounded-full w-[200px] h-[200px]" />
                 </div>
                 <div className='flex py-8 px-10 min-h-[180px]'>
                   <div className="flex flex-col items-start justify-start gap-2">

@@ -1,7 +1,12 @@
+"use client";
+
 import { Mail, Linkedin, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const ContactSection = () => {
+  const send = async () => {
+    console.log("send");
+  }
   return (
     <section id="contact" className="py-20 px-4 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto">
@@ -16,9 +21,8 @@ const ContactSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <div className="bg-card rounded-lg p-6 shadow-lg">
-            <form className="space-y-6">
+            <form className="space-y-6" action={send}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
                   Name
