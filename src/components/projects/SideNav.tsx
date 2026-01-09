@@ -54,7 +54,7 @@ const SideNav = ({ selectedFilter, onFilterChange, isOpen, onToggle }: SideNavPr
         className={cn(
           "transition-all duration-300 ease-in-out",
           "hidden lg:flex lg:fixed lg:left-0 lg:z-40 lg:flex-col",
-          "bg-background border-r border-border",
+          "bg-[#f0f0f0] dark:bg-[#101622] border-r border-t border-border",
           isOpen ? "lg:w-64" : "lg:w-16"
         )}
         style={{
