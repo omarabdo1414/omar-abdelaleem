@@ -6,10 +6,11 @@ import { Project } from "@/lib/types";
 // Images 
 import project1 from "@/public/images/projects/Food Ordering Test.webp";
 import project2 from "@/public/images/projects/LMS.png";
-import project3 from "@/public/images/projects/Chat.webp";
-import project4 from "@/public/images/projects/E-Commerce.png";
+import project3 from "@/public/images/projects/E-Commerce.png";
+import project4 from "@/public/images/projects/LMS.png";
+import project5 from "@/public/images/projects/Chat.webp";
 
-const images = [project1, project2, project3, project4];
+const images = [project1, project2, project3, project4, project5];
 
 interface ProjectCardProps {
   project: Project;
@@ -31,7 +32,9 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
     } else if (name.includes("lms platform") && !name.includes("ai")) {
       return project2; // LMS.png
     } else if (name.includes("ai lms") || name.includes("conversational")) {
-      return project3; // Chat.webp
+      return project3; // Conversational Tutor.webp
+    } else if (name.includes("chat")) {
+      return project5; // Chat.webp
     }
     // Fallback to index-based or project.imgURL
     return images[index] || project.imgURL;

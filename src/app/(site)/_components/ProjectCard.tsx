@@ -5,8 +5,8 @@ import { FeaturedProjects } from "@/lib/constants";
 // Images 
 import project1 from "@/public/images/projects/Food Ordering Test.webp";
 import project2 from "@/public/images/projects/LMS.png";
-import project3 from "@/public/images/projects/Chat.webp";
-import project4 from "@/public/images/projects/E-Commerce.png";
+import project3 from "@/public/images/projects/E-Commerce.png";
+import project4 from "@/public/images/projects/Chat.webp";
 
 const images = [project1, project2, project3, project4];
 

@@ -42,6 +42,15 @@ export const Projects: Project[] = [
     ],
     imgURL: "",
   },
+  {
+    name: "Chat Application",
+    techStack: ["Next.js", "React", "TypeScript", "Node.js", "Express", "Socket.io"],
+    description: [
+      "Developed a full-stack food ordering system with menu browsing, cart flow, and order management.",
+      "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
+    ],
+    imgURL: "",
+  }
 ];
 
 
