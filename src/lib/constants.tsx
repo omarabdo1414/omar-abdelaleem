@@ -14,6 +14,8 @@ export const Projects: Project[] = [
       "Reduced loading time using optimized image handling and server-side rendering.",
     ],
     imgURL: "",
+    src: "https://github.com/omarabdo1414/Basket",
+    liveDemo: "",
   },
   {
     name: "Food Ordering App",
@@ -23,6 +25,8 @@ export const Projects: Project[] = [
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
     ],
     imgURL: "",
+    src: "https://github.com/omarabdo1414/food-ordering",
+    liveDemo: "",
   },
   {
     name: "LMS Platform",
@@ -32,15 +36,8 @@ export const Projects: Project[] = [
       "Engineered reusable UI components, optimized form handling with Formik/Yup, and added animations plus toast feedback for UX.",
     ],
     imgURL: "",
-  },
-  {
-    name: "AI LMS with Conversational Tutor",
-    techStack: ["Next.js", "React", "TypeScript", "Clerk Auth", "shadcn/ui"],
-    description: [
-      "Built an LMS that allows users to create lessons and interact with an AI tutor through real-time chat.",
-      "Implemented Clerk for authentication, designed reusable UI, and integrated AI conversation logic for personalized learning.",
-    ],
-    imgURL: "",
+    src: "https://github.com/omarabdo1414/LMS",
+    liveDemo: "https://lms-lilac-nu.vercel.app/",
   },
   {
     name: "Chat Application",
@@ -50,8 +47,65 @@ export const Projects: Project[] = [
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
     ],
     imgURL: "",
+    src: "",
+    liveDemo: "",
+  },
+  {
+    name: "HTML & CSS Template Design One",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    description: [
+      "Designed and developed responsive HTML & CSS templates for various industries.",
+      "Ensured cross-browser compatibility and optimized performance for fast loading times.",
+    ],
+    imgURL: "",
+    src: "https://github.com/omarabdo1414/HTML_CSS_Template_One",
+    liveDemo: "https://omarabdo1414.github.io/HTML_CSS_Template_One/",
+  },
+  {
+    name: "HTML & CSS Template Design Two",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    description: [
+      "Designed and developed responsive HTML & CSS templates for various industries.",
+      "Ensured cross-browser compatibility and optimized performance for fast loading times.",
+    ],
+    imgURL: "",
+    src: "https://github.com/omarabdo1414/HTML_CSS_Template_Two",
+    liveDemo: "https://omarabdo1414.github.io/HTML_CSS_Template_Two/",
+  },
+  {
+    name: "HTML & CSS Template Design Three",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    description: [
+      "Designed and developed responsive HTML & CSS templates for various industries.",
+      "Ensured cross-browser compatibility and optimized performance for fast loading times.",
+    ],
+    imgURL: "",
+    src: "https://github.com/omarabdo1414/HTML_CSS_Template_Three",
+    liveDemo: "https://omarabdo1414.github.io/HTML_CSS_Template_Three/",
+  },
+  {
+    name: "JavaScript Template",
+    techStack: ["JavaScript", "ES6+", "DOM Manipulation", "HTML5", "CSS3"],
+    description: [
+      "Created interactive JavaScript templates showcasing dynamic content and user interactions.",
+      "Implemented modern JavaScript features for improved code readability and maintainability.",
+    ],
+    imgURL: "",
+    src: "https://github.com/omarabdo1414/JavaScript_Template",
+    liveDemo: "https://omarabdo1414.github.io/JavaScript_Template/",
+  },
+  {
+    name: "Bondi BootStrap",
+    techStack: ["Bootstrap", "HTML5", "CSS3", "JavaScript"],
+    description: [
+      "Developed a custom Bootstrap-based template for rapid web development.",
+      "Customized Bootstrap components to align with modern design principles and enhance user experience.",
+    ],
+    imgURL: "",
+    src: "https://github.com/omarabdo1414/Bondi_Bootsrap",
+    liveDemo: "https://omarabdo1414.github.io/Bondi_Bootsrap/",
   }
-];
+];  
 
 
 export const FeaturedProjects: Project[] = [
@@ -63,6 +117,8 @@ export const FeaturedProjects: Project[] = [
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
     ],
     imgURL: "",
+    src: "https://github.com/omarabdo1414/food-ordering",
+    liveDemo: "",
   },
   {
     name: "LMS Platform",
@@ -72,15 +128,19 @@ export const FeaturedProjects: Project[] = [
       "Engineered reusable UI components, optimized form handling with Formik/Yup, and added animations plus toast feedback for UX.",
     ],
     imgURL: "",
+    src: "https://github.com/omarabdo1414/LMS",
+    liveDemo: "https://lms-lilac-nu.vercel.app/",
   },
   {
-    name: "E-Commerce Websites",
+    name: "Basket E-Commerce",
     techStack: ["Next.js", "React", "TypeScript", "Redux Toolkit", "Prisma", "PostgreSQL"],
     description: [
       "Developed a full-stack food ordering system with menu browsing, cart flow, and order management.",
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
     ],
     imgURL: "",
+    src: "https://github.com/omarabdo1414/Basket",
+    liveDemo: "",
   },
   {
     name: "Chat Application",
@@ -90,6 +150,8 @@ export const FeaturedProjects: Project[] = [
       "Built a scalable backend with Prisma + PostgreSQL and used Redux Toolkit for robust global state management.",
     ],
     imgURL: "",
+    src: "",
+    liveDemo: "",
   }
 ]
 

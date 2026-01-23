@@ -90,9 +90,11 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
         </div>
 
         {/* Live Demo Button */}
-        <button className="w-full px-3 sm:px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors text-xs sm:text-sm mt-auto">
-          Live Demo
-        </button>
+        <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+          <button className="w-full px-3 sm:px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors text-xs sm:text-sm mt-auto">
+            Live Demo
+          </button>
+        </a>
       </div>
     </div>
   );

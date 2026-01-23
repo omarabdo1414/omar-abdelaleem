@@ -11,6 +11,8 @@ export type Project = {
   techStack: string[]; // List of technologies used
   description: string[]; // Multiple points describing the project
   imgURL: string | StaticImageData; // Image URL for the project
+  src: string; // Source code URL
+  liveDemo: string; // Live demo URL
 };
 
 export type Job = {

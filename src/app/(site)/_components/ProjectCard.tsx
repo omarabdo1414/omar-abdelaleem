@@ -55,18 +55,22 @@ const ProjectCard = () => {
                                 </div>
 
                                 <div className="flex gap-4 mt-4">
-                                    <button className="px-5 py-2 rounded-lg text-sm font-medium
-                    bg-black text-white dark:bg-primary
-                    transition hover:opacity-90">
-                                        Live Demo
-                                    </button>
+                                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+                                        <button className="px-5 py-2 rounded-lg text-sm font-medium
+                                        bg-black text-white dark:bg-primary
+                                            transition hover:opacity-90">
+                                            Live Demo
+                                        </button>
+                                    </a>
 
-                                    <button className="px-5 py-2 rounded-lg text-sm font-medium
+                                    <a href={project.src} target="_blank" rel="noopener noreferrer">
+                                        <button className="px-5 py-2 rounded-lg text-sm font-medium
                     border border-gray-300 dark:border-slate-700
                     text-gray-700 dark:text-slate-300
                     transition hover:bg-gray-100 dark:hover:bg-slate-800">
                                         View Code
                                     </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
